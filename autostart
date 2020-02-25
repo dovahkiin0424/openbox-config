@@ -1,0 +1,6 @@
+compton &
+wal -i '/home/dovahkiin0424/Képek/skateboard.jpg' &
+(sleep 3s && sh /home/dovahkiin0424/.config/polybar/launch.sh) &
+steam &
+discord &
+urxvtd -q &

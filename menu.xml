@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu
+    xmlns="http://openbox.org/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://openbox.org/
+    file:///usr/share/openbox/menu.xsd">
+    <menu id="root-menu" label="Openbox 3">
+        <item label="URxvt">
+            <action name="Execute">
+                <execute>urxvtc</execute>
+            </action>
+        </item>
+        <item label="Firefox">
+            <action name="Execute">
+                <execute>firefox</execute>
+            </action>
+        </item>
+        <item label="Steam">
+            <action name="Execute">
+                <execute>steam</execute>
+            </action>
+        </item>
+        <item label="Discord">
+            <action name="Execute">
+                <execute>discord</execute>
+            </action>
+        </item>
+        <separator />
+        <menu execute="openbox-menu lxde-applications.menu" id="apps" label="Szeméttelep"/>
+        <menu id="client-list-menu" />
+        <separator />
+        <item label="OBconf">
+            <action name="Execute">
+                <execute>obconf</execute>
+            </action>
+        </item>
+        <item label="Reconfigure">
+            <action name="Reconfigure"/>
+        </item>
+        <separator />
+        <menu id="exit" label="Kilépés">
+            <item label="Kijelentkezés">
+                <action name="Exit" />
+            </item>
+            <item label="Alvó állapot">
+                <action name="Execute">
+                    <execute>systemctl suspend</execute>
+                </action>
+            </item>
+            <item label="Hibernálás">
+                <action name="Execute">
+                    <execute>systemctl hibernate</execute>
+                </action>
+            </item>
+            <item label="Újraindítás">
+                <action name="Execute">
+                    <execute>systemctl reboot</execute>
+                </action>
+            </item>
+            <item label="Leállítás">
+                <action name="Execute">
+                    <execute>systemctl poweroff</execute>
+                </action>
+            </item>
+        </menu>
+    </menu>
+</openbox_menu>
